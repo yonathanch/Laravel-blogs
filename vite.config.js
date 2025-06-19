@@ -8,9 +8,8 @@ export default defineConfig({
         laravel({
             input: [
                 "resources/css/app.css",
-                "resources/js/app.js",
-                //tidak perlu konfigurasi pagination untuk build prject nya agar tidak error
-                // "./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",
+                "resources/js/app.js",  
+                "./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",
             ],
             refresh: true,
         }),
